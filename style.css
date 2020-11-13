@@ -1,8 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
+
 header {
   height: 75px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #header-img {
   max-height: 100%;
   width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  font-family: Meddon, sans-serif;
+  font-size: 1.25em;
+  color: #e9a6a6;
+  font-weight: bolder;
+  text-decoration: none;
+  padding-right: 30px;
 }

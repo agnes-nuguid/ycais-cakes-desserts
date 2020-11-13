@@ -2,10 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 
+:root {
+  --dark-brown: #421212;
+  --nude-pink: #e9a6a6;
+}
 body {
   margin: 0;
   font-family: "Julius Sans One", sans-serif;
-  color: #421212;
+  color: var(--dark-brown);
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
 }
 
 header {
@@ -27,7 +36,7 @@ nav ul {
 .nav-link {
   font-family: Meddon, sans-serif;
   font-size: 1.25em;
-  color: #e9a6a6;
+  color: var(--nude-pink);
   font-weight: bolder;
   text-decoration: none;
   padding-right: 30px;
@@ -39,4 +48,70 @@ video {
 }
 
 h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+input,
+label {
+  display: block;
+  border: 0;
+  width: 400px;
+  margin: auto;
+}
+
+input {
+  font-family: inherit;
+  border-bottom: var(--nude-pink) 1px solid;
+  padding: 10px 0px;
+}
+
+label {
+  color: var(--nude-pink);
+  -webkit-transform: translate3d(0, -25px, 0);
+  transform: translate3d(0, -25px, 0);
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+
+/* Hides placeholders by default */
+::-webkit-input-placeholder {
+  /* Edge */
+  color: transparent;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: transparent;
+}
+::placeholder {
+  color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-bottom: var(--dark-brown) 1px solid;
+}
+
+/* Label transition on focus or if input is filled*/
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  color: var(--dark-brown);
+  -webkit-transform: translate3d(0, -55px, 0);
+  transform: translate3d(0, -55px, 0);
+}
+
+/* Displays placeholders on focus */
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--nude-pink);
+}
+input:focus:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--nude-pink);
+}
+input:focus::placeholder {
+  color: var(--nude-pink);
 }

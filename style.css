@@ -1,0 +1,8 @@
+header {
+  height: 75px;
+}
+
+#header-img {
+  max-height: 100%;
+  width: auto;
+}

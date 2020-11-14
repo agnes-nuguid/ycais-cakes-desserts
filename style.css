@@ -88,7 +88,6 @@ label {
 }
 
 input:focus,
-select:focus,
 textarea:focus {
   outline: 0;
   border-bottom: var(--dark-brown) 1px solid;
@@ -114,4 +113,25 @@ input:focus:-ms-input-placeholder {
 }
 input:focus::placeholder {
   color: var(--nude-pink);
+}
+
+#submit {
+  background: var(--nude-pink);
+  padding: 15px;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: var(--dark-brown) 2px solid;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+#submit:hover {
+  background: var(--dark-brown);
+  color: var(--nude-pink);
+  border: white 2px solid;
+}
+
+#submit:focus {
+  outline: 0;
 }

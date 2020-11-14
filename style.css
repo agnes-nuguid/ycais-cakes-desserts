@@ -20,10 +20,11 @@ body {
 header {
   height: 100px;
   padding: 10px 0px;
-  background-color: white;
   width: 100%;
   position: fixed;
   z-index: 2;
+  background-color: white;
+  border-bottom: 2px solid var(--dark-brown);
 }
 
 header > .container {
@@ -58,6 +59,7 @@ nav ul {
 }
 
 video {
+  margin-top: 100px;
   max-width: 100%;
   height: auto;
 }

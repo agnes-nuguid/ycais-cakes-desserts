@@ -18,28 +18,40 @@ body {
 }
 
 header {
-  height: 75px;
+  height: 100px;
+  padding: 10px 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #header-img {
   max-height: 100%;
   width: auto;
+  padding: 10px 0px;
 }
 
 nav ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: flex;
+  text-align: right;
 }
 
 .nav-link {
   font-family: Meddon, sans-serif;
-  font-size: 1.25em;
-  color: var(--nude-pink);
   font-weight: bolder;
   text-decoration: none;
-  padding-right: 30px;
+  color: var(--nude-pink);
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-link:hover {
+  /* background-color: var(--nude-pink); */
+  color: var(--dark-brown);
+  border: 2px solid var(--dark-brown);
 }
 
 video {
@@ -52,12 +64,15 @@ h2 {
   text-align: center;
 }
 
+form {
+  margin: 10px;
+}
+
 input,
 label {
   display: block;
   border: 0;
-  width: 400px;
-  margin: auto;
+  width: 100%;
 }
 
 input {
@@ -134,4 +149,21 @@ input:focus::placeholder {
 
 #submit:focus {
   outline: 0;
+}
+
+@media (min-width: 450px) {
+  nav,
+  nav ul {
+    display: flex;
+  }
+  nav {
+    flex-grow: 2;
+  }
+
+  nav ul {
+    font-size: 1.25em;
+    flex: 1;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }

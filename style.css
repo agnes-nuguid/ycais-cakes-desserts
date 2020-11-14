@@ -24,7 +24,6 @@ header {
   position: fixed;
   z-index: 2;
   background-color: white;
-  border-bottom: 2px solid var(--dark-brown);
 }
 
 header > .container {

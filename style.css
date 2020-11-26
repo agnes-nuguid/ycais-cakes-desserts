@@ -34,12 +34,10 @@ body {
 
 .container {
   max-width: 650px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 header {
-  height: 100px;
-  padding: 10px 0px;
   width: 100%;
   position: fixed;
   z-index: 2;
@@ -49,18 +47,17 @@ header {
 header > .container {
   display: flex;
   justify-content: space-around;
+  padding: 10px;
 }
 
 #header-img {
   max-height: 85px;
   width: auto;
-  padding: 10px 0px;
   flex-grow: 1;
 }
 
 nav ul {
   margin: 0;
-  padding-right: 20px;
   list-style: none;
   text-align: right;
 }
@@ -177,6 +174,7 @@ h2 {
 #contact .container {
   width: 100%;
 }
+
 form {
   margin: 10px;
 }
@@ -257,7 +255,6 @@ input:focus::placeholder {
   background: #ebbec4;
   background: var(--nude-pink);
   padding: 15px;
-  font-weight: bolder;
   border-radius: 20px;
   border: #723940 2px solid;
   border: var(--dark-brown) 2px solid;

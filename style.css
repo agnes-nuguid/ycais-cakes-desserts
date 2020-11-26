@@ -64,6 +64,12 @@ nav ul {
   text-align: right;
 }
 
+#nav-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .nav-link {
   font-size: 20px;
   font-weight: 700;
@@ -183,13 +189,13 @@ input:focus::placeholder {
 @media (min-width: 430px) {
   /* Moves the logo to the left side */
   #header-img {
-    flex-grow: 0;
+    align-self: flex-start;
   }
 
   nav,
   nav ul {
     display: flex;
-    flex-grow: 2;
+    flex-grow: 1;
     padding: 0;
   }
 

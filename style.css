@@ -84,6 +84,8 @@ nav ul {
   );
 
   background-size: 100%;
+  /* For chrome */
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1);

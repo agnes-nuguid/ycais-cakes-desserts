@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Meddon&display=swap");
 
 :root {
-  --dark-brown: #421212;
-  --nude-pink: #e9a6a6;
+  --dark-brown: #723940;
+  --light-brown: #b76e78;
+  --nude-pink: #ebbec4;
+  --gold: #d4aa00;
 }
 body {
   margin: 0;

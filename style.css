@@ -8,9 +8,13 @@
   --nude-pink: #ebbec4;
   --gold: #d4aa00;
 }
-body {
+
+* {
   margin: 0;
-  font-family: "Julius Sans One", sans-serif;
+  outline: 0;
+  padding: 0;
+}
+
   color: var(--dark-brown);
 }
 

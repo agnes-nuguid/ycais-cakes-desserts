@@ -32,10 +32,9 @@
       </div>
     </header>
     <main>
-      <section id="about">
-        <video id="video" controls>
+      <video id="video" controls>
         <source src="assets/video.mp4?autoplay=1&loop=1" type="video/mp4" />
-        </video>
+      </video>
       <section id="about">
         <div class="container">
           <h2>about</h2>
@@ -46,20 +45,54 @@
           </p>
         </div>
       </section>
+      <section id="products">
+        <div class="container">
+          <h2>Products</h2>
+          <div id="premium" class="product">
+            <div class="product-details">
+              <h3 class="product-title">Premium Letter Cakes</h3>
+              <div class="product-description">
+                Elegantly themed catered down to the letter
+              </div>
+            </div>
+            <div class="product-cover">
+              <img
+                class="product-photo"
+                src="assets/images/premium-cake.jpg"
+                alt="Premium Letter Cake at Ycai's"
+              />
+            </div>
+          </div>
+          <div id="tailored" class="product">
+            <div class="product-cover">
+              <img
+                class="product-photo"
+                src="assets/images/custom-tailored-cake.jpg"
+                alt="Premium Letter Cake at Ycai's"
+              />
+            </div>
+            <div class="product-details">
+              <h3 class="product-title">Custom Tailored Cakes</h3>
+              <div class="product-description">
+                Tailored specifically to your unique event
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <div class="container">
-        <h2>Contact Us</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="sample@email.com"
-          />
-          <label for="email">Email:</label>
+          <h2>Contact Us</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="sample@email.com"
+            />
+            <label for="email">Email:</label>
             <input id="submit" type="submit" value="Submit" />
-        </form>
+          </form>
         </div>
       </section>
     </main>

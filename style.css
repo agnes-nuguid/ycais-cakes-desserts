@@ -43,7 +43,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 2;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 header > .container {
@@ -129,6 +129,7 @@ h2 {
 }
 
 #products {
+  background: #ebbec4;
   background: var(--nude-pink);
 }
 
@@ -140,6 +141,7 @@ h2 {
   display: flex;
   border-radius: 20px;
   margin: 50px 10px;
+  box-shadow: 0px 3px 3px 0px #723940;
   box-shadow: 0px 3px 3px 0px var(--dark-brown);
   background: #ffffff;
 }
@@ -187,12 +189,13 @@ label {
 }
 
 input {
-  font-family: inherit;
+  border-bottom: #ebbec4 1px solid;
   border-bottom: var(--nude-pink) 1px solid;
   padding: 10px 0px;
 }
 
 label {
+  color: #ebbec4;
   color: var(--nude-pink);
   -webkit-transform: translate3d(0, -25px, 0);
   transform: translate3d(0, -25px, 0);
@@ -216,12 +219,14 @@ label {
 input:focus,
 textarea:focus {
   outline: 0;
+  border-bottom: #723940 1px solid;
   border-bottom: var(--dark-brown) 1px solid;
 }
 
 /* Label transition on focus or if input is filled*/
 input:not(:placeholder-shown) + label,
 input:focus + label {
+  color: #723940;
   color: var(--dark-brown);
   -webkit-transform: translate3d(0, -55px, 0);
   transform: translate3d(0, -55px, 0);
@@ -231,13 +236,16 @@ input:focus + label {
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
   /* Edge */
+  color: #ebbec4;
   color: var(--nude-pink);
 }
 input:focus:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
+  color: #ebbec4;
   color: var(--nude-pink);
 }
 input:focus::placeholder {
+  color: #ebbec4;
   color: var(--nude-pink);
 }
 
@@ -246,10 +254,12 @@ input:focus::placeholder {
   letter-spacing: 4px;
   text-transform: uppercase;
   font-weight: bolder;
+  background: #ebbec4;
   background: var(--nude-pink);
   padding: 15px;
   font-weight: bolder;
   border-radius: 20px;
+  border: #723940 2px solid;
   border: var(--dark-brown) 2px solid;
   margin-top: 20px;
   cursor: pointer;
@@ -257,9 +267,11 @@ input:focus::placeholder {
 }
 
 #submit:hover {
+  background: #723940;
   background: var(--dark-brown);
+  color: #ebbec4;
   color: var(--nude-pink);
-  border: white 2px solid;
+  border: #ffffff 2px solid;
 }
 
 #submit:focus {

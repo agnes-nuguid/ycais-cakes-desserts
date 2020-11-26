@@ -75,8 +75,21 @@ nav ul {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--nude-pink);
-  transition: all 0.1s ease-in-out;
+  background: #723940;
+  background-image: linear-gradient(
+    90deg,
+    #723940,
+    #b76e78,
+    #723940,
+    #b76e78,
+    #723940
+  );
+
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1);
+  transition: all 0.1s;
 }
 
 .nav-link:hover {
